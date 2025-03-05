@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html to ise>
+
+<head>
+<link rel='preload'as="style"
+href='https://ise.web.app/110/l.css'>
+<link rel='preload'as="script"
+href='https://ise.web.app/110/sen.js'>
+<link rel='preload'as="script"
+href='https://ise.web.app/110/l.js'>
+<link rel='stylesheet' href='https://ise.web.app/110/l.css'>
+</head>
+
+<body>
+
+<bon mid></bon>
+<bon>
+<ask bbg2 id="ask-in" say="Where?"></ask>
+<tap do="window.location.replace(bon('#ask-in').text)" gbg> <say>Go.</say></tap>
+</bon>
+
+ <nav>
+<part id="mn" hide>
+ <tap bbg2 go="https://github.com/new"> Make</tap>
+ 
+ <tap bbg2 go="https://ise.web.app">Ise</tap>
+ </part>
+ 
+ <part item-right>
+<tap bbg2 do="bon('#mn').at('hide');">
+  <say mid>+</say>
+</tap>
+</part>
+</nav>
+
+</body>
+
+
+<script src="https://ise.web.app/110/sen.js"> </script>
+<script src="https://ise.web.app/110/l.js"> </script>
+
