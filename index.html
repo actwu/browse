@@ -11,7 +11,22 @@ href='https://ise.web.app/110/sen.js'>
 href='https://ise.web.app/110/l.js'>
 <link rel='stylesheet' href='https://ise.web.app/110/l.css'>
 </head>
+<style>
+  html, body {
+  touch-action: none;
+  user-select: none;
+  overflow: hidden;
+}
 
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+nav:active + input[type="checkbox"] {
+  visibility: visible;
+}
+</style>
 <body>
 
 <bon mid></bon>
@@ -35,10 +50,25 @@ href='https://ise.web.app/110/l.js'>
 </tap>
 </part>
 </nav>
-
+<input hide type="checkbox">
 </body>
 
 
 <script src="https://ise.web.app/110/sen.js"> </script>
 <script src="https://ise.web.app/110/l.js"> </script>
 
+<script>
+ let u04848484738  
+window.addEventListener("beforeinstallprompt",e=>(e.preventDefault(),u04848484738=e));
+
+u83639273=()=>u04848484738&&u04848484738.prompt().then(()=>u04848484738=null)
+
+document.addEventListener("gesturestart", e => e.preventDefault());
+document.addEventListener("wheel", e => e.ctrlKey && e.preventDefault());
+
+document.querySelector("nav").addEventListener("click", () => {
+  navigator.vibrate && navigator.vibrate(50);
+  bon("input[type='checkbox']").click();
+});
+
+</script>
