@@ -12,35 +12,51 @@ href='https://ise.web.app/110/l.js'>
 <link rel='stylesheet' href='https://ise.web.app/110/l.css'>
 </head>
 <style>
+*{
+
+--b2:#404060 !important;
+}
 nav:active + input[type="checkbox"] {
-  visibility: visible;
+visibility: visible;
+}
+
+[bm] {
+border-top: solid 0.5px var(--b2);
+border-bottom: solid 0.5px var(--b2);
+}
+
+[ft] {
+max-width:max-content;
 }
 </style>
 <body>
 
 <bon mid></bon>
 <bon>
-<ask bbg2 id="ask-in" say="Where?">https://</ask>
-<tap do="window.location.replace(bon('#ask-in').text)" gbg> <say>Go.</say></tap>
+<row>
+<ask bm bol bend='0' bbg id="ask-in" say="Where?">https://</ask>
+<tap ft do="window.location.replace(bon('#ask-in').text)" bol2 bend='0' bbg> 
+<i m class='fa-solid fa-arrow-right'></i></tap></row>
 </bon>
 
- <nav>
+<nav>
 <part id="mn" hide>
- <tap bbg2 go="https://github.com/">Github</tap>
- <tap bbg2 go="https://google.com/"> Search</tap>
- <tap bbg2 go="https://scholar.google.com/">RRL</tap>
- 
- <tap bbg2 go="https://ise.web.app">Ise</tap>
- </part>
- 
- <part item-right>
-<tap bbg2 do="bon('#mn').at('hide');">
-  <say mid>+</say>
+<tap bbg bm bend='0' left no-m go="https://duck.com/">Duck</tap>
+<tap bbg bm bend='0' left no-m go="https://github.com/">Github</tap>
+<tap bbg bm bend='0' left no-m go="https://google.com/"> Search</tap>
+<tap bbg bm bend='0'left no-m  go="https://scholar.google.com/">RRL</tap>
+
+<tap bbg bm bend='0'left no-m go="https://ise.web.app">Ise</tap>
+</part>
+
+<part item-right>
+<tap no-m bol2 bbg bend="0" do="bon('#mn').at('hide');">
+<say mid>+</say>
 </tap>
 </part>
 </nav>
 <input hide type="checkbox">
-  <see></see>
+<see></see>
 </body>
 
 
