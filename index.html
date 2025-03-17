@@ -13,17 +13,25 @@ href='https://ise.web.app/110/l.js'>
 </head>
 <style>
 *{
-
 --b2:#404060 !important;
 }
+tap:hover, ask:hover {
+opacity: 50%;
+transition: opacity  0.3s !important;
+}
+tap, ask {
+opacity: 100%;
+transition: opacity 0.3s!important;
+}
+
 nav:active + input[type="checkbox"] {
 visibility: visible;
 }
 
 [bm] {
-border-top: solid 0.5px var(--b2);
 border-bottom: solid 0.5px var(--b2);
 }
+
 
 [bl] {
 border-left: solid 0.5px var(--b2);
@@ -53,7 +61,7 @@ gap:0 !important;}
 <tap ft do="window.location.replace(bon('#ask-in').text)" bl no-m bend='0' item> 
 <say no-m no-p mid>➤</say></tap>
 </part>
-<part id="mn" hide>
+<part id="mn" no-p no-m hide>
 <tap bbg bm bend='0' left no-m go="https://duck.com/">Duck</tap>
 
 <tap bbg bm bend='0' left no-m go="https://github.com/">Github</tap>
