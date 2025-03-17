@@ -30,8 +30,19 @@ max-width:max-content;
 }
 </style>
 <body>
+<part id="mn" hide>
+<tap bbg bm bend='0' left no-m go="https://duck.com/">Duck</tap>
+
+<tap bbg bm bend='0' left no-m go="https://github.com/">Github</tap>
+<tap bbg bm bend='0' left no-m go="https://google.com/"> Search</tap>
+<tap bbg bm bend='0'left no-m  go="https://scholar.google.com/">RRL</tap>
+<tap bbg bm bend='0' left no-m go="https://canva.com/">Canva</tap>
+<tap bbg bm bend='0' left no-m go="https://spotify.com/">Spotify</tap>
+<tap bbg bm bend='0'left no-m go="https://ise.web.app">Ise</tap>
+</part>
 
 <bon mid></bon>
+
 <bon>
 <row>
 <ask bm bol bend='0' bbg id="ask-in" say="Where?">https://</ask>
@@ -40,14 +51,6 @@ max-width:max-content;
 </bon>
 
 <nav>
-<part id="mn" hide>
-<tap bbg bm bend='0' left no-m go="https://duck.com/">Duck</tap>
-<tap bbg bm bend='0' left no-m go="https://github.com/">Github</tap>
-<tap bbg bm bend='0' left no-m go="https://google.com/"> Search</tap>
-<tap bbg bm bend='0'left no-m  go="https://scholar.google.com/">RRL</tap>
-
-<tap bbg bm bend='0'left no-m go="https://ise.web.app">Ise</tap>
-</part>
 
 <part item-right>
 <tap no-m bol2 bbg bend="0" do="bon('#mn').at('hide');">
@@ -64,8 +67,4 @@ max-width:max-content;
 <script src="https://ise.web.app/110/l.js"> </script>
 
 <script>
-
-
-
-
 </script>
