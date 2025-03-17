@@ -25,11 +25,34 @@ border-top: solid 0.5px var(--b2);
 border-bottom: solid 0.5px var(--b2);
 }
 
+[bl] {
+border-left: solid 0.5px var(--b2);
+}
+[br] {
+border-right: solid 0.5px var(--b2);
+}
 [ft] {
 max-width:max-content;
 }
+
+[g0] {
+gap:0 !important;}
 </style>
-<body>
+<body spacemono>
+
+<bon mid></bon>
+
+<bon>
+
+<part g0 item bol2 bend='0' no-m no-p>
+<tap no-m ft br bbg bend="0" do="hide('[sl1]'); hide('[sl2]'); hide('#mn');">
+<say mid no-m no-p sl1>+</say>
+<say mid no-m no-p sl2 hide>o</say>
+</tap>
+<ask left item-left bend='0' bbg id="ask-in" say="Where?">https://</ask>
+<tap ft do="window.location.replace(bon('#ask-in').text)" bl no-m bend='0' item> 
+<say no-m no-p mid>➤</say></tap>
+</part>
 <part id="mn" hide>
 <tap bbg bm bend='0' left no-m go="https://duck.com/">Duck</tap>
 
@@ -41,23 +64,9 @@ max-width:max-content;
 <tap bbg bm bend='0'left no-m go="https://ise.web.app">Ise</tap>
 </part>
 
-<bon mid></bon>
-
-<bon>
-<row>
-<ask bm bol bend='0' bbg id="ask-in" say="Where?">https://</ask>
-<tap ft do="window.location.replace(bon('#ask-in').text)" bol2 bend='0' bbg> 
-<i m class='fa-solid fa-arrow-right'></i></tap></row>
 </bon>
 
-<nav>
 
-<part item-right>
-<tap no-m bol2 bbg bend="0" do="bon('#mn').at('hide');">
-<say mid>+</say>
-</tap>
-</part>
-</nav>
 <input hide type="checkbox">
 <see></see>
 </body>
@@ -67,4 +76,8 @@ max-width:max-content;
 <script src="https://ise.web.app/110/l.js"> </script>
 
 <script>
+
+
+
+
 </script>
